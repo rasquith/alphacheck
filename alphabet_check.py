@@ -3,10 +3,14 @@ from string import ascii_uppercase
 import json
 
 
+# The letters of the alphabet in uppercase
 ALPHA_SET = set(list(ascii_uppercase))
 
 
 def string_to_set(input_str):
+    """Function takes a string and returns a set of its elements
+    Args:
+        input_str(str)"""
     input_str = decode(input_str, "unicode_escape")
     return(set(list(input_str.upper())))
 
